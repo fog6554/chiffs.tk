@@ -14,11 +14,23 @@
       }
       </script>
       <style>
+      #d2{
+      width:60%;
+      }
       #m02{
         position:relative;
         margin-right:10%;
         margin-left:10%;
         width:80%;
+        color:white;
+        font-family:'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
+        background-color:#555;
+        height:7.1vh;
+        line-height:7vh;
+        font-size:120%;
+      }
+      #m04{
+        position:relative;
         color:white;
         font-family:'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
         background-color:#555;
@@ -54,6 +66,9 @@
         
         transition: 0.6s;
       }
+      .wh1{
+           max-width:80%;
+      }
               /* width */
         ::-webkit-scrollbar {
             width: 0.8rem;
@@ -76,25 +91,150 @@
             ::-webkit-scrollbar-thumb:hover {
                 background: #555;
             }
+            
+   
+      @media screen and (max-width: 1000px){
+           #d1,#d3{display:none;}
+           #d2{width:100%;}
+           #menu-div-v1{display:none;}
+           .w40{
+            width:80%;
+           }
+           .l1{
+           width:65%;
+           text-align:left;
+           margin-left:35%;
+           }
+            .wh1{
 
+           font-size:300%;
+            }
+           
+           #Menu {
+            background-color: #555;
+            }
+            
+            #Kopp {
+              color: white;
+              font-family: 'Titillium Web', 'verdana', 'Roboto', sans-serif;
+              font-size: 200%;
+              font-weight: bold;
+              display: inline-block;
+              padding-left: 2vw;
+              //top:0.1vh;
+              width:40vw;
+            }
+            .dropbtn {
+              background-color: #555;
+              color: white;
+              padding: 2vh;
+              font-size: 150%;
+              border: none;
+              min-width: 10vw;
+              margin:1vh;
+            }
+            
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #555;
+              min-width: 9rem;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;   
+              
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              padding-right:1px;
+              text-decoration: none;
+              display: block;
+              font-family:verdana;
+              font-size:100%;
+            }
+            
+            .dropdown-content a:hover {background-color: #777;}
+            
+            .dropdown:hover .dropdown-content {display: block;}
+            
+            .dropdown:hover .dropbtn {background-color: #666;}
+      
+      }
+      @media screen and (min-width: 1000px){
+        
+           #menu-div-v2{display:none;}
+            .w40{
+            width:50%;
+           }
+           .l1{
+           margin-left:35%; 
+           }
+            .wh1{
+           font-size:400%;
+            }
+           
+      }
+    @media screen and (max-width: 760px){
+           .l1{
+           margin-left:10%;
+           }    
+    }
+      @media screen and (min-width: 420px){
+        .rightfloat{
+        float:right;
+        }
+      }
+      @media screen and (max-width: 490px){
+       .l1{
+           width:90%;
+           }
+        } 
       </style>
   </head>
   <body style='margin-right:0px;margin-top:0px;margin-left:0px;margin-bottom:0px;background:#333;'>
   <div id="d1" style="width:20%;float:left;min-height:100%;box-shadow: -15px 0px 8px -1px #333 inset;"><div style="width:20%;height:100%;background-image: url('crop-left.jpg');box-shadow: -15px 0px 8px -1px #333 inset;position:fixed;"> </div></div>
-  <div id="d2"style="width:60%;float:left;">
-        <div id="m01" style="width:100%;background-color:rgb(240,240,240);">
-            <div id="m02">
-                <div id="name">Cz Chiffs</div>
-                <div id="cont">
-                    <a id="cont-a" href="style.css">Wars & Games</a>
-                    <a id="cont-a" href="style.css">Pravidla</a>                       
+  <div id="d2"style="float:left;">
+                <div id="menu-div-v1">
+            <div id="m01" style="width:100%;background-color:rgb(240,240,240);">
+                <div id="m02">
+                    <div id="name">Cz Chiffs</div>
+                    <div id="cont">
+                        <a id="cont-a" href="team">Wars & Games</a>
+                        <a id="cont-a" href="/">Home</a>                       
+                    </div>
                 </div>
             </div>
+            <div id='WelcomeA1' style='background-color:rgb(240,240,240);' >
+            <center>
+              <img src="hiclipart.com.png" alt="Uvodni obrazek" width="25%"> 
+            </center>
+            </div>
         </div>
-        <div id='WelcomeA1' style='background-color:rgb(240,240,240);' >
-        <center>
-          <img src="hiclipart.com.png" alt="Uvodni obrazek" width="25%"> 
-        </center>
+        <div id="menu-div-v2">
+            <div id="menu" style='width:100%;background-color:#555;'>
+            <h1 onclick='location.reload()' id='Kopp' style="font-size:200%;"> Cz Chiffs </h1>
+            <div class="dropdown"style='width:20vw;height:0.5vh;'></div>
+            <div class="dropdown rightfloat">
+              <button class="dropbtn" style='font-family:verdana;font-weight:bold;'><i class="fa fa-bars"></i> Menu</button>
+              <div class="dropdown-content">
+                <a style='color:white; font-family:verdana;'href="/">Home</a>
+                <a style='color:white; font-family:verdana; border-top:0.3vh solid silver;border-bottom:0.3vh solid silver;'href="team">War,CG</a>
+            
+              </div>
+            </div>
+            </div>  
+
+            <div id='WelcomeA1' style='background-color:rgb(240,240,240);' >
+            <center>
+              <img src="hiclipart.com.png" alt="Uvodni obrazek" width="25%"> 
+            </center>
+            </div>
         </div>
                                                                                                                               
                
@@ -102,7 +242,7 @@
         <center>
         <div style="background-color:#008ecc;font-size:100%;color:white;">
         <br>
-        <h1 style="font-size:400%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;">Pravidla<br><i id="dropfall"class="fa fa-chevron-down"></i></h1>
+        <h1 class="wh1"style="font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;">Pravidla<br><i id="dropfall"class="fa fa-chevron-down"></i></h1>
         <br>
         <div style="width:40%;text-algin:left;">                                                                                                                                      
         <h3 style="font-size:200%;font-weight:500;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;"> <u>Pravidla pro přijetí</u></h3>
@@ -120,21 +260,21 @@
         <h3 style="font-weight:500;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;"> <u>Hodnosti</u></h3>
         <br>
         
-          <p style="font-size:65%;max-width:40%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;">Elder <i class="fa fa-graduation-cap"></i> &nbsp;Přijímá nové hráče ale nesmí kickovat! Dostanete ho za aktivitu, donate a snahu. </p>
-          <p style="font-size:65%;max-width:40%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;">Co-Leader <i class="fa fa-cog"></i> &nbsp;Každý Co-Leader má na starosti něco jiného. Každopádně Co-leader můžete být jen pokud jste opravdu extra aktivní, donatujete a hrajte.</p>
-          <p style="font-size:65%;max-width:40%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;">O promote neproste a neupozorňujte na to. Pokud si ho zasloužíte, všimneme si toho.</p><br>
+          <p class="w40" style="font-size:65%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;">Elder <i class="fa fa-graduation-cap"></i> &nbsp;Přijímá nové hráče ale nesmí kickovat! Dostanete ho za aktivitu, donate a snahu. </p>
+          <p class="w40" style="font-size:65%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;">Co-Leader <i class="fa fa-cog"></i> &nbsp;Každý Co-Leader má na starosti něco jiného. Každopádně Co-leader můžete být jen pokud jste opravdu extra aktivní, donatujete a hrajte.</p>
+          <p class="w40" style="font-size:65%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;">O promote neproste a neupozorňujte na to. Pokud si ho zasloužíte, všimneme si toho.</p><br>
         </div>
         
-        <div style="background-color:#008ecc;font-size:100%;text-align:center:color:white;">
-        <div style="min-width:40%;max-width:90%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;height:;color:white;">
+        <div style="background-color:#008ecc;font-size:100%;">
+        <div style="min-width:40%;max-width:95%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;height:;color:white;">
           <h3 style="font-size:200%;font-weight:500;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;margin:0;"><br> <u>Ostatní pravidla</u></h3>
           <br>
           <ul>
-            <li style="font-size:150%;float:left;margin-left:35%;">Donate 1:2</li><br> <br>
-            <li style="font-size:150%;float:left;margin-left:35%;">Aktivita</li><br>
-            <li style="font-size:150%;float:left;margin-left:35%;">Donatovat to o co se žádá</li><br>
-            <li style="font-size:150%;float:left;margin-left:35%;">Pomáhat slabším hráčům</li><br>
-            <li style="font-size:150%;float:left;margin-left:35%;">Do CG alespoň 1000 bodů</li><br> 
+            <li class="l1" style="font-size:150%;float:left;">Donate 1:2</li><br> <br>
+            <li class="l1"style="font-size:150%;float:left;">Aktivita</li><br>
+            <li class="l1"style="font-size:150%;float:left;">Donatovat to o co se žádá</li><br>
+            <li class="l1"style="font-size:150%;float:left;">Pomáhat slabším hráčům</li><br>
+            <li class="l1"style="font-size:150%;float:left;">Do CG alespoň 1000 bodů</li><br> 
           </ul>
           <br>
           <br><br><br><br>
