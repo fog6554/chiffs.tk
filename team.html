@@ -117,7 +117,7 @@
               font-size: 200%;
               font-weight: bold;
               display: inline-block;
-              padding-left: 2vw;
+              padding-left: 1rem;
               //top:0.1vh;
               width:40vw;
             }
@@ -156,12 +156,24 @@
               font-family:verdana;
               font-size:100%;
             }
+              #arr1{
+            display:none;
+            }
+            #arr2{
+            display:inline;}
             
+            
+            .dropdown:hover #arr2{
+            display:none;
+            transition:0.9s;}
+            .dropdown:hover #arr1{
+            display:inline;
+            transition:0.9s;}
             .dropdown-content a:hover {background-color: #777;}
             
             .dropdown:hover .dropdown-content {display: block;}
             
-            .dropdown:hover .dropbtn {background-color: #666;}
+            .dropdown:hover .dropbtn {background-color: #555;color:;transition:0.9s;}
       
       }
       @media screen and (min-width: 1000px){
@@ -176,7 +188,7 @@
             }
            
       }
-      @media screen and (min-width: 420px){
+      @media screen and (min-width: 435px){
         .rightfloat{
         float:right;
         }
@@ -207,7 +219,7 @@
             <h1  onclick='location.href="/"' id='Kopp' style="font-size:200%;"> Cz Chiffs </h1>
             <div class="dropdown"style='width:20vw;height:0.5vh;'></div>
             <div class="dropdown rightfloat">
-              <button class="dropbtn" style='font-family:verdana;font-weight:bold;'><i class="fa fa-bars"></i> Menu</button>
+              <button class="dropbtn" style='font-family:verdana;font-weight:bold;'><i class="fa fa-bars" id="arr2"></i><i class="fa fa-caret-up" id="arr1"></i> Menu </button>
               <div class="dropdown-content">
                 <a style='color:white; font-family:verdana;'href="pravidla">Pravidla</a>
                 <a style='color:white; font-family:verdana; border-top:0.3vh solid silver;border-bottom:0.3vh solid silver;'href="/">Home</a>
@@ -233,7 +245,7 @@
           <h3 style="font-size:200%;font-weight:500;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;"> <u>Clan Wars</u></h3>
           <br>
           
-            <p class="w40" style="font-size:150%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;">Clan Wars jsou většinou v menším počtu. Jednou za čas se dělá "Celoclanová". Pokud nechcete být v Clan Wars,najeďte si na svůj profil a uvidíte zelené/červené tlačítko Clan wars. Když na něj kliknete změní se na červené nebo zelené. Když je červené, znamená to že do CW nechcete. A když zelené tak ano. Důležité je poslouchat pokyny. Každá CW má svou vlastní strategii, kterou vždy naleznete v Clan Mailu. Pokud možno choďte s kompletní army a plným Clan Castlem. Za neuposlechnutí či nezaútočení hrozí kick! <i class="fa fa-shield"></i></p>
+            <p class="w40" style="font-size:150%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;">Clan Wars jsou většinou v menším počtu. Jednou za čas se dělá "Celoclanová". Pokud nechcete být v Clan Wars,najeďte si na svůj <b>profil</b> a uvidíte <b style="color:green;">zelené</b>/<b style="color:#f55;">červené</b> tlačítko Clan wars. Když na něj kliknete změní se na červené nebo zelené. Když je <b style="color:#f55;">červené</b>, znamená to že <b>do CW nechcete</b>. A když <b style="color:green;">zelené</b> tak <b style="color:green;">ano</b>. Důležité je poslouchat pokyny. Každá CW má svou vlastní strategii, kterou vždy naleznete v Clan Mailu. Pokud možno choďte s kompletní army a plným Clan Castlem. <b>Za neuposlechnutí či nezaútočení hrozí kick!</b> <i class="fa fa-shield"></i></p>
           <br>
           </div><br>
         </div>
@@ -243,7 +255,7 @@
             <h3 style="font-size:200%;font-weight:500;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;"> <u>Clan Games</u></h3>
             <br>
             
-              <p class="w40" style="font-size:150%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;"> Clan Games se týkají každého s Town Hall 6<i class="fa fa-home"></i>+. Jde o plnění úkolů za které je určitý počet bodů. Ty se sčítají v celém Clanu. A podle celkového počtu si na konci vybíráme odměny. Od každého je očekáváno alespoň 1500 bodů. Za nezúčastnění se je kick (samozřejmě se lze omluvit). Vyplatí se snažit! </p>
+              <p class="w40" style="font-size:150%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;"> Clan Games se týkají každého s Town Hall 6<i class="fa fa-home"></i>+. Jde o plnění úkolů za které je určitý počet bodů. Ty se sčítají v celém Clanu. A podle celkového počtu si na konci vybíráme <b style="color:gold;">odměny</b>. <b>Od každého je očekáváno alespoň 1000 bodů</b>. Za nezúčastnění se je kick (samozřejmě se lze omluvit). <b>Vyplatí se snažit!</b> </p>
             <br>
           </div>
         </div>
@@ -254,7 +266,7 @@
             <h3 style="font-size:200%;font-weight:500;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;"> <u>Clan War League</u></h3>
             <br>
             
-            <p class="w40"style="font-size:150%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;"> Výsledné hodnocení CWL se počíta podle nasbíraných hvězd. Proto i když jednotlivé bitvy prohráváme, se můžeme dobře umístit. Proto je potřeba poslouchat pokyny !! Strategie se domlouvá vždy prostřednictvím chatu a inboxu. Proto je dobré to pokud možno číst. Za Clan War League dostáváte super odměny - opravdu se vyplatí se ten týden snažit.<br><br>V CWL máte pouze jeden útok což znamená že se potřeba ho dobře využít. Na každý útok se dobře připravte a řiďte se pokyny ! Pokud domluvený cíl nezvládnete alespoň na dvě hvězdy řekněte to a nějak se domluvíme... lepší než to ostatním zkazit! </p>
+            <p class="w40"style="font-size:150%;font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;"> Výsledné hodnocení CWL se počíta podle nasbíraných <b>hvězd <i style="color:gold;"class="fa fa-star"></i></b>. Proto i když jednotlivé bitvy prohráváme, se můžeme dobře umístit. Proto je potřeba poslouchat pokyny !! Strategie se domlouvá vždy prostřednictvím <b>chatu</b> a <b>inboxu</b>. Proto je dobré to pokud možno číst. Za Clan War League dostáváte super odměny - opravdu se vyplatí se ten týden snažit.<br><br><b>V CWL máte pouze jeden útok </b>což znamená že se potřeba ho dobře využít. Na každý útok se dobře připravte a řiďte se pokyny ! Pokud domluvený cíl nezvládnete alespoň na dvě hvězdy řekněte to a nějak se domluvíme... lepší než to ostatním zkazit! </p>
             <br>
           </div><br>
             
@@ -266,7 +278,7 @@
           <br>
           <br>
           <p style='color:silver; font-family: verdana; font-size: 90%; margin-left: 3vw; position: relative;'> Discord: <a style="color:silver;" href="https://discord.gg/rPXpCncP8H">discord.gg/rPXpCncP8H</a></p> 
-          <p style='color:silver; font-family: verdana; font-size: 90%; margin-left: 3vw; position: relative;'> Kód clanu: #2Y2UJYCYJ </p>
+          <p style='color:silver; font-family: verdana; font-size: 90%; margin-left: 3vw; position: relative;'> Kód clanu: #29QQJQVLU </p>
           <p style='color:silver; font-family: verdana; font-size: 90%; margin-left: 3vw; position: relative;'> ©2021</p>
           <br>
         </div>
