@@ -119,6 +119,7 @@
               border: none;
               min-width: 10vw;
               margin:1vh;
+              margin-right:2.5vh;
             }
 
 
@@ -202,10 +203,15 @@
         float:right;
         }
       }
-      @media screen and (max-width: 435px){
+    @media screen and (max-width: 390px){
       #Kopp{
-      width:3rem;
-      }
+      font-size:150%;
+      }.dropbtn{
+      font-size:100%;
+      margin:0.1vh;}
+      .dropdown-content{
+      font-size:90%;
+      min-width:6rem;}
       }
       </style>
   </head>
@@ -225,8 +231,8 @@
         </div>
         <div id="menu-div-v2">
             <div id="menu" style='width:100%;background-color:#555;'>
-            <h1 onclick='location.reload()' id='Kopp' style="font-size:200%;"> Cz Chiffs </h1>
-            <div class="dropdown"style='width:20vw;height:0.5vh;'></div>
+            <h1 onclick='location.reload()' id='Kopp' style=""> Cz Chiffs </h1>
+
             <div class="dropdown rightfloat">
               <button class="dropbtn" style='font-family:verdana;font-weight:bold;'> Menu <i class="fa fa-bars" id="arr2"></i><i class="fa fa-caret-up" id="arr1"></i></button>
               <div class="dropdown-content">
